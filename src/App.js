@@ -1,5 +1,5 @@
-import logo from "./logo.png"
-import Dictionary from "./Dictionary"
+import logo from "./logo.png";
+import Dictionary from "./Dictionary";
 import "./App.css";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo img-fluid" alt="logo" />   
       </header>
       <main>
-        <Dictionary defaultKeyword="sunset"/>
+        <Dictionary defaultKeyword="summer"/>
       </main>
       <footer className="App-footer">
         <small>Coded by E.Cherevko</small></footer>

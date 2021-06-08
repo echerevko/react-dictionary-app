@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Photos.css"
+import "./Photos.css";
 
 const Photos = (props) => {
     if  (props.photos) {
@@ -10,7 +10,7 @@ const Photos = (props) => {
                     return (
                         <div className="col-4" key={index} >
                             <a href={photo.src.original} target="_blank" rel="noreferrer">
-                                <img src={photo.src.landscape} className="img-fluid" />
+                                <img src={photo.src.landscape} className="img-fluid" alt=" "/>
                             </a>
                         </div>
                     )
@@ -21,7 +21,6 @@ const Photos = (props) => {
     } else {
         return null;
     }
-    
 }
 
-export default Photos
+export default Photos;

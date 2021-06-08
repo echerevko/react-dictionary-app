@@ -12,4 +12,4 @@ const Phonetic = (props) => {
     )
 }
 
-export default Phonetic
+export default Phonetic;

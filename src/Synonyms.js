@@ -19,4 +19,4 @@ const Synonyms = (props) => {
     }
 }
 
-export default Synonyms
+export default Synonyms;

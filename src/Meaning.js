@@ -1,6 +1,6 @@
 import React from 'react';
 import Synonyms from "./Synonyms";
-import "./Meaning.css"
+import "./Meaning.css";
 
 const Meaning = (props) => {
     return (
@@ -20,4 +20,4 @@ const Meaning = (props) => {
     )
 }
 
-export default Meaning
+export default Meaning;
