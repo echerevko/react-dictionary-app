@@ -23,7 +23,7 @@ const Dictionary = (props) => {
         axios.get(apiUrl).then(handleDictionaryResponse);
 
         let pexelsApiKey = `563492ad6f917000010000012d70564070c6449aa059c75616bb5bdd`;
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
         let headers = {Authorization: `Bearer ${pexelsApiKey}`}
         axios
             .get(pexelsApiUrl, {headers: headers})
@@ -51,12 +51,12 @@ const Dictionary = (props) => {
             <section>
                 <h3>What word do you want to look up?</h3>
                 <form onSubmit={handleSubmit}>
-                <input type="search" autoFocus={true} onChange={handleKeywordChange}
-                defaultValue={props.defaultKeyword}/>   
+                    <input type="search" autoFocus={true} onChange={handleKeywordChange}
+                    defaultValue={props.defaultKeyword}/>   
                 </form> 
-         </section>
-         <Results results={results}/> 
-        <Photos photos={photos}/> 
+            </section>
+            <Results results={results}/> 
+            <Photos photos={photos}/> 
 
         </div>
      )  
